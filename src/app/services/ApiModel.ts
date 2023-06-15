@@ -1,11 +1,11 @@
 import { environment } from "../../environments/environment";
 
 
-export const ApiBaseUrl = environment.api_url; // "https://localhost:44315";
-// export const SwitchUiDomainUrl = environment.switchUI_domainUrl;
+export const ApiBaseUrl = environment['api_url'];
+
 export const
   ApiEndPoint = {
-    //customer 
+  //customer 
     GetCustomerList:"/api/Main/getcustomerlist",
     AddupdateCustomer:'/api/Main/addupdatecustomer',
     DeleteCustomer:'/api/Main/deletecustomer',
