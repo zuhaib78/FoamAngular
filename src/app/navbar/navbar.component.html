@@ -1,0 +1,30 @@
+
+<!-- Dashboard -->
+<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary ">
+    <!-- Vertical Navbar -->
+    <nav class="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg" id="navbarVertical" >
+        <div class="container-fluid custom-background-color">
+            <!-- Toggler --> 
+            <div class="navbar-user d-lg-none">
+                <!-- Dropdown -->
+                
+            </div> <!-- Collapse -->
+
+            <div class="collapse navbar-collapse" id="sidebarCollapse">
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item" *ngFor="let menuItem of menuItems" >
+                         <a class="nav-link" [routerLink]="[menuItem.path]"> 
+                            <i class=" {{menuItem.class}}"></i>
+                            <p style="color: white !important;">{{menuItem.title}}</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item"> <a class="nav-link" href="#" style="color: white !important;"> <i class="bi bi-person-square" ></i > Account </a> </li>
+                    <li class="nav-item"> <a class="nav-link" routerLink="/customer" style="color: white !important;"> <i class="bi bi-box-arrow-left" ></i> Logout </a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Main content -->
+
+</div>

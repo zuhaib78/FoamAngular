@@ -1,1 +1,145 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+ 
+ 
+ .modal.show .modal-dialog .modal-content {
+    transform: none;
+    width: 774px !important;
+}
+
+.header-color{
+  background-color: black;
+  }
+
+  .custom-message-swal{
+    background: rgba(0,0,0,0) !important;
+    .swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{
+        top: 1em;
+        left: 0.1em;
+        width: 0.6em;
+    }
+    .swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{
+        top: 0.8em;
+        right: 1.2em;
+        left: 6px;
+        width: 1em;
+    }
+    .swal2-icon.swal2-success [class^=swal2-success-line]{
+        height: 0.2125em;
+        background-color: white;
+    }
+    .swal2-icon{
+        border: 0.15em solid transparent;
+        margin: 1em auto 1.875em;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 3em;
+    }
+    .swal2-header {
+        display: flex;
+        flex-direction: initial;
+        align-items: center;
+        padding: 0 3em;
+    }
+    .swal2-icon.swal2-success .swal2-success-ring{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .swal2-popup{
+        width: 27em;
+        padding: 10px 5px;
+        border-left: 4px solid #a5dc86;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        box-shadow: 0px 0px 11px -3px #00000082;
+        border-radius: 8px;
+    }
+    .swal2-icon.swal2-success{
+        border-color: #a5dc86;
+        background: #a5dc86;
+    }
+    .swal2-icon.swal2-success{
+        position: absolute;
+        left: 10px;
+        top: 0;
+    }
+    .swal2-actions{
+        display: none;
+    }
+    .swal2-title{
+        font-size: 1em;
+    }
+    .swal2-content{
+        font-size: 1em;
+        padding: 0 3em;
+        text-align: left;
+    }
+    .swal2-icon.swal2-success .swal2-success-ring{
+        display: none;
+    }
+    .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{
+        display: none;
+    }
+    .swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{
+        display: none;
+    }
+    .swal2-icon.swal2-success .swal2-success-fix{
+        display: none;
+    }
+    .custom-message-swal .swal2-icon.swal2-success .swal2-success-ring{
+        display: none;
+    }
+    button.swal2-close{
+        display: none;
+    }
+    .swal2-icon.swal2-error,.swal2-icon.swal2-warning,.swal2-icon.swal2-question,.swal2-icon.swal2-success{
+        display: none !important;
+    }
+    .swal2-popup.swal2-modal.swal2-icon-success.swal2-show:before {
+        content: "\e949";
+        font-family: 'code-icons';
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: #a5dc86;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .swal2-popup.swal2-modal.swal2-icon-error.swal2-show:before{
+        content: "\e945";
+        font-family: 'code-icons';
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: #dc8686;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .swal2-popup.swal2-modal.swal2-icon-error.swal2-show{
+        border-left: 4px solid #dc8686;
+    }
+}
+.cpr-lg-modal {
+    //   width: 100%;
+      max-width: 800px !important;
+    }
+
+    .custom-modal .modal-dialog {
+        width: 800px !important;
+      }
+
+      .modal.show .modal-dialog .modal-content {
+        transform: none;
+        width: 1200px !important;
+       
+    }
+
+    .modal.show .modal-dialog {
+        transform: none;
+        margin-right: 768px !important;
+    }

@@ -1,0 +1,83 @@
+<div class="p-2">
+    <div class="row">
+      <div class="col-sm-12 px-0">
+        <div class="">
+          
+          <form [formGroup]="ProductForm" (ngSubmit)="OnSubmit()" onkeydown="return event.key != 'Enter';" novalidate>
+            <div class="card-body">
+             
+              <section>
+                
+                <div class="form-row">
+                  <div class="col-md-6 form-group">
+                    <label>Product Name: <span class="required-label">*</span></label>
+                    <input trim="blur" class="form-control" formControlName="Name" type="text"
+                      [ngClass]="{ 'is-invalid': f.Name.invalid && (f.Name.dirty || f.Name.touched) }"
+                      placeholder="Enter First Name"  />
+                    <div class="invalid-feedback"
+                      *ngIf="f.Name.invalid && (f.Name.dirty || f.Name.touched)">
+                       Name is Required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label>Sales Price: <span class="required-label">*</span></label>
+                    <input trim="blur" class="form-control" formControlName="SalesPrice" type="text"
+                      [ngClass]="{ 'is-invalid': f.SalesPrice.invalid && (f.SalesPrice.dirty || f.SalesPrice.touched) }"
+                      placeholder="Enter Last Name"  />
+                    <div class="invalid-feedback"
+                      *ngIf="f.SalesPrice.invalid && (f.SalesPrice.dirty || f.SalesPrice.touched)">
+                      Sales Price is Required.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                      <label>Product Stock: <span class="required-label">*</span></label>
+                      <input trim="blur" class="form-control" formControlName="AvailableStock" type="text"
+                        [ngClass]="{ 'is-invalid': f.AvailableStock.invalid && (f.AvailableStock.dirty || f.AvailableStock.touched) }"
+                        placeholder="Enter Product Stock"  />
+                      <div class="invalid-feedback"
+                        *ngIf="f.AvailableStock.invalid && (f.AvailableStock.dirty || f.AvailableStock.touched)">
+                        Product stock is Required.
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-6">
+                      <label>Product Catagory: <span class="required-label">*</span></label>
+                      <select class="form-control" formControlName="ProductCatagory"
+                     >
+                      <option value="0"  value="null" disabled selected="selected"> Select Catagory</option>
+                      <option value="1" >Rubby </option>
+                      <option value="2" >Marjan </option>
+                      <option value="3" >Molty </option>
+                      <option value="4" >ABC Company </option>
+                      <option value="5" >Other</option>
+                    </select>
+                      <div class="invalid-feedback"
+                        *ngIf="f.ProductCatagory.invalid && (f.ProductCatagory.dirty || f.ProductCatagory.touched)">
+                        Product stock is Required.
+                      </div>
+                    </div>
+                  
+    
+                  </div>
+ 
+             
+  
+              </section>
+  
+  
+            </div>
+            <div class="text-center">
+              <button  class="btn btn-success"
+                [disabled]='!ProductForm.valid' prevent-double-submit type="submit">
+                {{IsEditMode? "Update": "Create" }}</button>
+            </div>
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  

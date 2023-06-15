@@ -1,0 +1,74 @@
+
+<app-header [Tittle]="Tittle"></app-header>
+<div class="card mt-5 header-color">
+
+<div class="button-align mt-3 mr-3">
+  <button class="btn btn-primary" style="margin-right: 20px;" (click)="createCustomer(customer)">Add Customer</button>
+</div>
+
+
+  <div class="clr-row mt-5">
+    <div class="clr-col-lg-6 clr-col-12">
+      <div class="card">
+        <div class="card-block">
+          <div class="card-text">
+            <table class="table mt-3">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Contact Number</th>
+                  <th scope="col">Email</th>
+                  <th scope="col" >Address</th>
+                  <th scope="col">Customer Balance</th> 
+                  <th scope="col">Actions</th> 
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of CustomerList">
+                  <td>{{item.customerName}}</td>
+                  <td>{{item.contactNumber}}</td>
+                  <td>{{item.email}}</td>
+                  <td>{{item.address}}</td>
+                  <td>{{item.customerBalance}}</td>
+                  <td>
+                    <div class="d-flex align-items-center mr-1 edit-view">
+                    
+                      <span class="">
+                        <i class="code-pencil-o cursor-pointer cpr-dark-green" title="Edit"
+                          (click)="EditCustomer(customer,item.customerId)"></i>
+                        |
+                        <i class="code-trash-o pr-2 cursor-pointer primary-color" title="Delete"
+                          (click)="DeleteCustomer(item.customerId)"></i>
+                      </span>
+                    </div>
+
+
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <ng-template #customer role="dialog">
+    <div class="modal-header card-header">
+      <div class="">
+        <h4  style="font-size: x-large;" class="d-flex mb-0 title">
+          {{IsEditMode ? 'Update' : 'Create' }} 
+        </h4>
+      </div>
+
+      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="CustomerModal?.hide()">
+        <span aria-hidden="true" class="visually-hidden"><i class="code-close-o"></i></span>
+  </button>
+    </div> 
+    <div class="modal-body">
+<app-create-customer (onsucess)="closeModal($event)" [EditCustomerID]="EditCustomerID"></app-create-customer>
+    </div>
+  </ng-template>

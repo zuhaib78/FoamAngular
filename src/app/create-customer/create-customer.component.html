@@ -1,0 +1,74 @@
+<div class="p-2">
+    <div class="row">
+      <div class="col-sm-12 px-0">
+        <div class="">
+          
+          <form [formGroup]="CustomerForm" (ngSubmit)="OnSubmit()" onkeydown="return event.key != 'Enter';" novalidate>
+            <div class="card-body">
+             
+              <section>
+                
+                <div class="form-row">
+                  <div class="col-md-6 form-group">
+                    <label>Customer Name: <span class="required-label">*</span></label>
+                    <input trim="blur" class="form-control" formControlName="CustomerName" type="text"
+                      [ngClass]="{ 'is-invalid': f.CustomerName.invalid && (f.CustomerName.dirty || f.CustomerName.touched) }"
+                      placeholder="Enter First Name"  />
+                    <div class="invalid-feedback"
+                      *ngIf="f.CustomerName.invalid && (f.CustomerName.dirty || f.CustomerName.touched)">
+                      First Name is Required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label>Contact Number: <span class="required-label">*</span></label>
+                    <input trim="blur" class="form-control" formControlName="ContactNumber" type="text"
+                      [ngClass]="{ 'is-invalid': f.ContactNumber.invalid && (f.ContactNumber.dirty || f.ContactNumber.touched) }"
+                      placeholder="Enter Contact Number"  />
+                    <div class="invalid-feedback"
+                      *ngIf="f.ContactNumber.invalid && (f.ContactNumber.dirty || f.ContactNumber.touched)">
+                      Contact Number is Required.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                      <label>Email: <span class="required-label">*</span></label>
+                      <input trim="blur" class="form-control" formControlName="Email" type="text"
+                        [ngClass]="{ 'is-invalid': f.Email.invalid && (f.Email.dirty || f.Email.touched) }"
+                        placeholder="Enter Email"  />
+                      <div class="invalid-feedback"
+                        *ngIf="f.Email.invalid && (f.Email.dirty || f.Email.touched)">
+                        Email is Required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label>Address: <span class="required-label">*</span></label>
+                      <input trim="blur" class="form-control" formControlName="Address" type="text"
+                        [ngClass]="{ 'is-invalid': f.Address.invalid && (f.Address.dirty || f.Address.touched) }"
+                        placeholder="Enter Address"  />
+                      <div class="invalid-feedback"
+                        *ngIf="f.Address.invalid && (f.Address.dirty || f.Address.touched)">
+                        Address is Required.
+                      </div>
+                    </div>
+                  </div>
+ 
+             
+  
+              </section>
+  
+  
+            </div>
+            <div class="text-center">
+              <button  class="btn btn-success"
+                [disabled]='!CustomerForm.valid' prevent-double-submit type="submit">
+                {{IsEditMode? "Edit": "Create" }}</button>
+            </div>
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  

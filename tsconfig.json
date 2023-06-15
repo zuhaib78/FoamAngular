@@ -4,7 +4,23 @@
 
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
+// {
+//   "files": [],
+//   "references": [
+//     {
+//       "path": "./tsconfig.app.json"
+//     },
+//     {
+//       "path": "./tsconfig.spec.json"
+//     }
+// ]
+// }
+
+
 {
+  "compilerOptions": {
+    "experimentalDecorators": true
+  },
   "files": [],
   "references": [
     {
@@ -13,5 +29,5 @@
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ]
 }

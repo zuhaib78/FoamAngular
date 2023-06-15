@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.invoice-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.invoice-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+.invoice-header p {
+    margin: 0;
+}
+.invoice-body {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.invoice-table {
+    margin-bottom: 20px;
+}
+.invoice-table th, .invoice-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.invoice-table th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+    text-align: center;
+}
+.invoice-total {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.invoice-total p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form-container {
+   
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  textarea.form-control {
+    height: auto;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0062cc;
+  }
+
+  .btn-primary-custom{
+    background-color: #89bb2e;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    border: solid 1px;
+    border-radius: 5px;
+  }
+
+  .btn-danger-custome{
+    color: #fff;
+    background-color: #f36;
+    border-color: #f36;
+    padding-left: 1px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    border: solid 1px;
+    border-radius: 5px;
+
+  }
+
+//   .ng-select {
+//     position: relative !important;
+//     display: block !important;
+//     box-sizing: border-box !important;
+// }
+// .cstm-mulltiSelect .ng-dropdown-panel {
+//   border: 1px solid #b2b2b2 !important;
+//   border-bottom-right-radius: 4px !important;
+//   border-bottom-left-radius: 4px !important;
+// }
+// .ng-dropdown-panel {
+//   box-sizing: border-box !important;
+//   position: absolute !important;
+//   opacity: 0 !important;
+//   width: 100% !important;
+//   z-index: 1050 !important;
+//   -webkit-overflow-scrolling: touch !important;
+// }
+
+/* Style the dropdown container */
+// .ng-select {
+//   position: relative;
+//   display: block;
+//   width: 100%;
+//   max-width: 300px;
+// }
+
+// /* Style the dropdown button */
+// .ng-select .ng-select-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   height: 36px;
+//   padding: 0 10px;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   background-color: #fff;
+//   font-size: 14px;
+//   color: #333;
+//   cursor: pointer;
+// }
+
+// /* Style the dropdown button when it is open */
+// .ng-select .ng-select-container.ng-select-focused {
+//   border-color: #007bff;
+//   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//   outline: none;
+// }
+
+// /* Style the dropdown options container */
+// .ng-select .ng-dropdown-panel {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   right: 0;
+//   z-index: 1;
+//   max-height: 200px;
+//   overflow-y: auto;
+//   background-color: #fff;
+//   border: 1px solid #ccc;
+//   border-top: none;
+//   border-radius: 0 0 4px 4px;
+//   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+// }
+
+// /* Style the dropdown options */
+// .ng-select .ng-option {
+//   display: block;
+//   padding: 10px;
+//   font-size: 14px;
+//   color: #333;
+//   cursor: pointer;
+// }
+
+// /* Style the selected option */
+// .ng-select .ng-value {
+//   display: flex;
+//   align-items: center;
+//   height: 100%;
+//   padding: 0 10px;
+//   font-size: 14px;
+//   color: #333;
+// }
+
+// /* Style the selected option remove button */
+// .ng-select .ng-value-icon {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 16px;
+//   height: 16px;
+//   margin-left: 8px;
+//   font-size: 12px;
+//   color: #ccc;
+//   cursor: pointer;
+// }
+
+// /* Style the selected option remove button on hover */
+// .ng-select .ng-value-icon:hover {
+//   color: #333;
+// }
+
+// /* Style the selected option when the dropdown is open */
+// .ng-select .ng-value.ng-select-opened {
+//   border-radius: 4px 4px 0 0;
+// }
+
+// /* Style the highlighted option */
+// .ng-select .ng-option.ng-highlight {
+//   background-color: #007bff;
+//   color: #fff;
+// }

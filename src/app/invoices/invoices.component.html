@@ -1,0 +1,87 @@
+
+<app-header [Tittle]="Tittle"></app-header>
+<div class="card mt-5 header-color" >
+  
+<div class="button-align mt-3 mr-3">
+  <button class="btn btn-primary" style="margin-right: 20px;" (click)="CreateInvoice(Invoice)">Add Product</button>
+</div>
+
+  <div class="clr-row mt-5">
+    <div class="clr-col-lg-6 clr-col-12">
+      <div class="card">
+        <div class="card-block">
+          <div class="card-text">
+            <table class="table mt-2">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Sales Price</th>
+                  <th scope="col">Stock Avaialble</th>
+                   <th scope="col">Product Catagory</th> 
+                   <th scope="col"> Solds </th>
+                   <th scope="col">Revenue Generated</th>
+                   <th scope="col">Created Date</th>
+                   
+                  <th scope="col">Actions</th> 
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of InvoicetList">
+                  <td>{{item.name}}</td>
+                  <td style="text-align: center;">{{item.salesPrice}}</td>
+                  <td> 
+                    <span class="stock-avaialble">
+                      {{item.availableStock}}
+                    </span>
+                  </td>
+                  <td style="text-align: center;">{{item.catagory}}</td>
+                  <td style="text-align: center;">
+                    {{item.soldCount}}
+                  </td>
+
+                  <td style="text-align: center;">
+                  {{item.revenueGenerated}}
+                  </td>
+
+                  <td>
+                    {{item.formattedDate}}
+
+                  </td>
+
+                  <td>
+                    
+                    <div class="d-flex align-items-center mr-1 edit-view">
+                    
+                      <span class="">
+                        <i class="code-pencil-o cursor-pointer cpr-dark-green" title="Edit"
+                          (click)="EditProduct(Product,item.id)"></i>
+                        |
+                        <i class="code-trash-o pr-2 cursor-pointer primary-color" title="Delete"
+                          (click)="DeleteProduct(item.id)"></i>
+                      </span>
+                    </div>
+
+
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <ng-template #Invoice role="dialog">
+    <div class="modal-header card-header">
+      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="InvoiceModal?.hide()">
+        <span aria-hidden="true" class="visually-hidden"><i class="code-close-o"></i></span>
+      </button>
+    
+    </div> 
+    <div class="modal-body">
+      <app-create-general-invoice  [InvoiceModal]="Id" (onSuccess)="OnSucessCall()"> </app-create-general-invoice>
+    </div>
+  </ng-template>

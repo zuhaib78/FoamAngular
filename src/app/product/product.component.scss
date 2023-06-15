@@ -1,0 +1,36 @@
+// .form-width{
+//     max-width: 100%;
+//     width: 700px;
+// }
+
+// .form-control{
+//     padding-left: 5px;
+//     padding-right:2px;
+// } 
+
+.button-align{
+    display: flex;
+    justify-content: end;
+
+}
+
+.stock-avaialble{
+    margin-left: 5px;
+    background-color: #d00d1f;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: white;
+    font-size: small;
+    border: solid 1px;
+    border-radius: 22px;
+    border-color: #cb2525;
+}
+
+th{
+
+font-size: 14px !important;
+font-weight: bold !important;
+
+}
