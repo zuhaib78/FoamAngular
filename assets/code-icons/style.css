@@ -1,0 +1,591 @@
+@font-face {
+  font-family: 'code-icons';
+  src:  url('fonts/code-icons.eot?llxri1');
+  src:  url('fonts/code-icons.eot?llxri1#iefix') format('embedded-opentype'),
+    url('fonts/code-icons.ttf?llxri1') format('truetype'),
+    url('fonts/code-icons.woff?llxri1') format('woff'),
+    url('fonts/code-icons.svg?llxri1#code-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="code-"], [class*=" code-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'code-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.code-wallet:before {
+  content: "\e9bb";
+}
+.code-dollar:before {
+  content: "\e9ba";
+}
+.code-canvas:before {
+  content: "\e9b8";
+}
+.code-payout:before {
+  content: "\e9b9";
+}
+.code-barcodearea:before {
+  content: "\e9b7";
+}
+.code-qr-code:before {
+  content: "\e9b6";
+}
+.code-i-o:before {
+  content: "\e9b5";
+}
+.code-blankfile-o:before {
+  content: "\e9b2";
+}
+.code-folder-o:before {
+  content: "\e9b3";
+}
+.code-published:before {
+  content: "\e9b4";
+}
+.code-menubars:before {
+  content: "\e9b1";
+}
+.code-circle-plus:before {
+  content: "\e9af";
+}
+.code-jobsearch-outline:before {
+  content: "\e9ae";
+}
+.code-connect-o:before {
+  content: "\e9b0";
+}
+.code-status:before {
+  content: "\e9ad";
+}
+.code-job:before {
+  content: "\e9ac";
+}
+.code-tick-1:before {
+  content: "\e9a9";
+}
+.code-circle-minus:before {
+  content: "\e9aa";
+}
+.code-circle-tick:before {
+  content: "\e9ab";
+}
+.code-integration:before {
+  content: "\e99e";
+}
+.code-advertisement:before {
+  content: "\e997";
+}
+.code-agencyfriendly:before {
+  content: "\e998";
+}
+.code-certificate:before {
+  content: "\e999";
+}
+.code-classes:before {
+  content: "\e99a";
+}
+.code-clientmanagement:before {
+  content: "\e99b";
+}
+.code-communication:before {
+  content: "\e99c";
+}
+.code-instructor:before {
+  content: "\e99d";
+}
+.code-invoicing:before {
+  content: "\e99f";
+}
+.code-keycodedelivery:before {
+  content: "\e9a0";
+}
+.code-mobile-friendly:before {
+  content: "\e9a1";
+}
+.code-onlinepayment:before {
+  content: "\e9a2";
+}
+.code-paperwork:before {
+  content: "\e9a3";
+}
+.code-report:before {
+  content: "\e9a4";
+}
+.code-shipping-cost:before {
+  content: "\e9a5";
+}
+.code-store:before {
+  content: "\e9a6";
+}
+.code-terms-and-conditions:before {
+  content: "\e9a7";
+}
+.code-url-shorterner:before {
+  content: "\e9a8";
+}
+.code-vir-classroom:before {
+  content: "\e996";
+}
+.code-export-file:before {
+  content: "\e992";
+}
+.code-re-export:before {
+  content: "\e993";
+}
+.code-remove-filter:before {
+  content: "\e994";
+}
+.code-search-filter:before {
+  content: "\e995";
+}
+.code-template-download:before {
+  content: "\e96e";
+}
+.code-create-account:before {
+  content: "\e96d";
+}
+.code-logout-o:before {
+  content: "\e93b";
+}
+.code-logout:before {
+  content: "\e93c";
+}
+.code-import-excel-file:before {
+  content: "\e946";
+}
+.code-reject:before {
+  content: "\e939";
+}
+.code-approve:before {
+  content: "\e93a";
+}
+.code-go-to-cart-f:before {
+  content: "\e990";
+}
+.code-go-to-cart-o:before {
+  content: "\e991";
+}
+.code-send-o2:before {
+  content: "\e98e";
+}
+.code-send-f1:before {
+  content: "\e98f";
+}
+.code-World:before {
+  content: "\e98d";
+}
+.code-call-f:before {
+  content: "\e989";
+}
+.code-call-o:before {
+  content: "\e98a";
+}
+.code-email-f:before {
+  content: "\e98b";
+}
+.code-email-o:before {
+  content: "\e98c";
+}
+.code-star-solid:before {
+  content: "\e988";
+}
+.code-Compact:before {
+  content: "\e985";
+}
+.code-Default:before {
+  content: "\e986";
+}
+.code-Large:before {
+  content: "\e987";
+}
+.code-info:before {
+  content: "\e984";
+}
+.code-menu:before {
+  content: "\e981";
+}
+.code-chevron-left1:before {
+  content: "\e982";
+}
+.code-chevron-right1:before {
+  content: "\e983";
+}
+.code-counter:before {
+  content: "\e980";
+}
+.code-downtrading:before {
+  content: "\e97f";
+}
+.code-pendingConnection:before {
+  content: "\e97d";
+}
+.code-trading:before {
+  content: "\e97e";
+}
+.code-prohibited-o:before {
+  content: "\e97c";
+}
+.code-emaildoc:before {
+  content: "\e97b";
+}
+.code-forward:before {
+  content: "\e975";
+}
+.code-repeat:before {
+  content: "\e976";
+}
+.code-score:before {
+  content: "\e977";
+}
+.code-zoomIn:before {
+  content: "\e978";
+}
+.code-zoomOut:before {
+  content: "\e979";
+}
+.code-download-paperwork:before {
+  content: "\e97a";
+}
+.code-Gridview-f:before {
+  content: "\e974";
+}
+.code-user-f1:before {
+  content: "\e972";
+}
+.code-user-o1:before {
+  content: "\e973";
+}
+.code-invoice-f:before {
+  content: "\e970";
+}
+.code-invoice-o:before {
+  content: "\e971";
+}
+.code-courses-f:before {
+  content: "\e960";
+}
+.code-courses-o:before {
+  content: "\e961";
+}
+.code-studentfee-f:before {
+  content: "\e940";
+}
+.code-studentfee-o:before {
+  content: "\e96f";
+}
+.code-sorting:before {
+  content: "\e96c";
+}
+.code-order-f:before {
+  content: "\e966";
+}
+.code-order-o:before {
+  content: "\e967";
+}
+.code-request-f:before {
+  content: "\e96a";
+}
+.code-request-o:before {
+  content: "\e96b";
+}
+.code-view-f:before {
+  content: "\e968";
+}
+.code-hide-f:before {
+  content: "\e969";
+}
+.code-hide-o:before {
+  content: "\e921";
+}
+.code-view:before {
+  content: "\e94d";
+}
+.code-dollar-f:before {
+  content: "\e94c";
+}
+.code-dollar-o:before {
+  content: "\e95e";
+}
+.code-instructor-o:before {
+  content: "\e95f";
+}
+.code-instructor-f:before {
+  content: "\e962";
+}
+.code-Instructorgroup-f:before {
+  content: "\e963";
+}
+.code-instructorgroup-o:before {
+  content: "\e964";
+}
+.code-bell-o:before {
+  content: "\e965";
+}
+.code-approve-f:before {
+  content: "\e958";
+}
+.code-rapprove-o:before {
+  content: "\e959";
+}
+.code-reject-f:before {
+  content: "\e95a";
+}
+.code-reject-o:before {
+  content: "\e95b";
+}
+.code-class-f:before {
+  content: "\e95c";
+}
+.code-class-o:before {
+  content: "\e95d";
+}
+.code-key-f:before {
+  content: "\e909";
+}
+.code-key-o:before {
+  content: "\e937";
+}
+.code-moneyrequest-f:before {
+  content: "\e938";
+}
+.code-moneyrequest-o:before {
+  content: "\e93d";
+}
+.code-send-f:before {
+  content: "\e93e";
+}
+.code-send-o1:before {
+  content: "\e93f";
+}
+.code-userremove-f:before {
+  content: "\e954";
+}
+.code-userremove-o:before {
+  content: "\e955";
+}
+.code-enrollment-f:before {
+  content: "\e956";
+}
+.code-enrollment-o:before {
+  content: "\e957";
+}
+.code-fb-f:before {
+  content: "\e933";
+}
+.code-instagram-f1:before {
+  content: "\e934";
+}
+.code-linkedin-f1:before {
+  content: "\e935";
+}
+.code-twitter-f1:before {
+  content: "\e936";
+}
+.code-calendar-f:before {
+  content: "\e932";
+}
+.code-instagram-f:before {
+  content: "\e950";
+}
+.code-fb:before {
+  content: "\e951";
+}
+.code-linkedin-f:before {
+  content: "\e952";
+}
+.code-twitter-f:before {
+  content: "\e953";
+}
+.code-export-o:before {
+  content: "\e94e";
+}
+.code-import-o:before {
+  content: "\e94f";
+}
+.code-location-f:before {
+  content: "\e92f";
+}
+.code-code-ellipses:before {
+  content: "\e903";
+}
+.code-menubar:before {
+  content: "\e901";
+}
+.code-arrow-down-t:before {
+  content: "\e94a";
+}
+.code-arrow-up-t:before {
+  content: "\e94b";
+}
+.code-clone-o:before {
+  content: "\e948";
+}
+.code-tick-f:before {
+  content: "\e949";
+}
+.code-close-o:before {
+  content: "\e945";
+}
+.code-rocket-f:before {
+  content: "\e908";
+}
+.code-rocket-o:before {
+  content: "\e944";
+}
+.code-rocketlauncher-o:before {
+  content: "\e930";
+}
+.code-rocketlauncher-f:before {
+  content: "\e931";
+}
+.code-calendar-o:before {
+  content: "\e941";
+}
+.code-trash-f:before {
+  content: "\e942";
+}
+.code-trash-o:before {
+  content: "\e943";
+}
+.code-doc-o:before {
+  content: "\e92b";
+}
+.code-print-o:before {
+  content: "\e92c";
+}
+.code-save-o:before {
+  content: "\e92d";
+}
+.code-send-o:before {
+  content: "\e92e";
+}
+.code-chevron-down:before {
+  content: "\e90c";
+}
+.code-chevron-up:before {
+  content: "\e915";
+}
+.code-location-o:before {
+  content: "\e925";
+}
+.code-camera:before {
+  content: "\e928";
+}
+.code-filter:before {
+  content: "\e929";
+}
+.code-sit:before {
+  content: "\e92a";
+}
+.code-chevron-left:before {
+  content: "\e926";
+}
+.code-chevron-right:before {
+  content: "\e927";
+}
+.code-user-o:before {
+  content: "\e907";
+}
+.code-bell-f:before {
+  content: "\e947";
+}
+.code-Book-o:before {
+  content: "\e90a";
+}
+.code-card-o:before {
+  content: "\e90b";
+}
+.code-clock-o:before {
+  content: "\e90d";
+}
+.code-db-o:before {
+  content: "\e90e";
+}
+.code-delete-o:before {
+  content: "\e90f";
+}
+.code-doted-bar-o:before {
+  content: "\e910";
+}
+.code-flag-o:before {
+  content: "\e911";
+}
+.code-identity-o:before {
+  content: "\e912";
+}
+.code-heart-f:before {
+  content: "\e913";
+}
+.code-link-o:before {
+  content: "\e914";
+}
+.code-plus:before {
+  content: "\e916";
+}
+.code-question-circle-f:before {
+  content: "\e917";
+}
+.code-question-circle-o:before {
+  content: "\e918";
+}
+.code-search-o:before {
+  content: "\e919";
+}
+.code-share-o:before {
+  content: "\e91a";
+}
+.code-user-setting-o:before {
+  content: "\e91b";
+}
+.code-window-o:before {
+  content: "\e91c";
+}
+.code-pencil-o:before {
+  content: "\e91d";
+}
+.code-list-o:before {
+  content: "\e91e";
+}
+.code-meter:before {
+  content: "\e91f";
+}
+.code-setting:before {
+  content: "\e920";
+}
+.code-bookmark-o:before {
+  content: "\e922";
+}
+.code-camera-edit:before {
+  content: "\e923";
+}
+.code-download-o:before {
+  content: "\e924";
+}
+.code-analyse:before {
+  content: "\e900";
+}
+.code-arrow-left:before {
+  content: "\e902";
+}
+.code-dollar-bag:before {
+  content: "\e904";
+}
+.code-edit:before {
+  content: "\e905";
+}
+.code-graph-o:before {
+  content: "\e906";
+}
